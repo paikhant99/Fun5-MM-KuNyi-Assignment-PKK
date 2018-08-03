@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/margin_medium"
+    android:background="@color/white_full"
+    android:layout_marginTop="@dimen/margin_medium">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium">
+        <TextView
+            android:id="@+id/tvShortDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Teach English Speaking"
+            android:textSize="20sp"
+            android:layout_marginLeft="@dimen/margin_medium"/>
+
+        <TextView
+            android:id="@+id/tvOfferAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 30000 per day"
+            android:layout_below="@id/tvShortDesc"
+            android:padding="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"/>
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvOfferAmount"
+            android:text="Teach English speaking with short time period for business purpose"
+            android:layout_margin="@dimen/margin_medium"/>
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hlaing"
+            android:layout_alignTop="@id/tvOfferAmount"
+            android:layout_toRightOf="@id/tvOfferAmount"
+            android:padding="@dimen/margin_small"
+            android:drawableLeft="@drawable/ic_location_24dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_spot_red_24dp"
+            android:layout_marginRight="@dimen/margin_medium"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

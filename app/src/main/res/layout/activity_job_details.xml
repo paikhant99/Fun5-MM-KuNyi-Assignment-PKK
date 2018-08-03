@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details Form"
+                android:textColor="@color/white_full"
+                android:textSize="@dimen/text_regular_3x" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/llDetailsInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_centerHorizontal="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Job Title : To Teach English Speaking"
+                        android:textSize="@dimen/text_regular_2x"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location : Hlaing"
+                        android:textSize="@dimen/text_regular_2x"
+                        android:layout_marginTop="@dimen/margin_medium"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment : $30000"
+                        android:textSize="@dimen/text_regular_2x"
+                        android:layout_marginTop="@dimen/margin_medium"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Period : "
+                        android:textSize="@dimen/text_regular_2x"
+                        android:layout_marginTop="@dimen/margin_medium" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vacancy : 3 posts Available"
+                        android:textSize="@dimen/text_regular_2x"
+                        android:layout_marginTop="@dimen/margin_medium"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvJobDescTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job Description"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:layout_below="@id/tvDates"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"/>
+                <TextView
+                    android:id="@+id/tvJobDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teach English speaking with short time period for business purpose"
+                    android:layout_below="@id/tvJobDescTitle"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"/>
+                <TextView
+                    android:id="@+id/tvImportantNotesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvJobDesc"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="** Important Notes **"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/margin_medium"/>
+                <TextView
+                    android:id="@+id/tvImportantNotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-We want you to come early in the morning"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_below="@id/tvImportantNotesTitle"
+                    android:layout_marginTop="@dimen/margin_medium" />
+                <TextView
+                    android:id="@+id/tvDates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start from 2018-10-27 until 2018-11-28"
+                    android:layout_below="@id/llDetailsInfo"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"/>
+            </RelativeLayout>
+        </ScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="APPLY THIS JOB"
+            android:gravity="center"
+            android:textColor="@color/white_full"
+            android:textStyle="bold"
+            android:padding="@dimen/margin_medium_2"
+            android:background="@color/accent"/>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
