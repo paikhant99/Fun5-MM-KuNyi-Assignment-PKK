@@ -1,3 +1,19 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Fun5-MM-KuNyi-Assignment-PKK</string>
+
+    <string name="format_dates">Start from <xliff:g id="start_date">%1$s</xliff:g> until <xliff:g id="end_date">%2$s</xliff:g></string>
+
+    <string name="format_interested_count">Interested : <xliff:g id="interested_count">%1$s</xliff:g></string>
+    <string name="format_viewed_count">Viewed : <xliff:g id="viewed_count">%1$s</xliff:g></string>
+    <string name="format_applied_count">Applied : <xliff:g id="applied_count">%1$s</xliff:g></string>
+
+    <string name="format_job_title">Job Title : <xliff:g id="job_title">%1$s</xliff:g></string>
+    <string name="format_location">Location : <xliff:g id="location">%1$s</xliff:g></string>
+    <string name="format_payment_duration">Payment : $ <xliff:g id="payment">%1$s</xliff:g> <xliff:g id="duration">%2$s</xliff:g></string>
+    <string name="format_posted_date">Posted Date : <xliff:g id="posted_date">%1$s</xliff:g></string>
+    <string name="format_post_closed_date">Post Closed Date : <xliff:g id="post_closed_date">%1$s</xliff:g></string>
+    <string name="format_vacancy">Vacancy : <xliff:g id="vacancy">%1$s</xliff:g> posts Available</string>
+    <string name="format_email">Email - <xliff:g id="email">%1$s</xliff:g></string>
+    <string name="format_phone_no">Phone Number - <xliff:g id="phone_no">%1$s</xliff:g></string>
+
 </resources>

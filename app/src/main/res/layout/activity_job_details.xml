@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -11,6 +11,7 @@
         <android.support.v7.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -20,111 +21,172 @@
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
-
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:id="@+id/llDetailsInfo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_marginTop="@dimen/margin_medium"
-                    android:layout_centerHorizontal="true">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Job Title : To Teach English Speaking"
-                        android:textSize="@dimen/text_regular_2x"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Location : Hlaing"
-                        android:textSize="@dimen/text_regular_2x"
-                        android:layout_marginTop="@dimen/margin_medium"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Payment : $30000"
-                        android:textSize="@dimen/text_regular_2x"
-                        android:layout_marginTop="@dimen/margin_medium"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Period : "
-                        android:textSize="@dimen/text_regular_2x"
-                        android:layout_marginTop="@dimen/margin_medium" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Vacancy : 3 posts Available"
-                        android:textSize="@dimen/text_regular_2x"
-                        android:layout_marginTop="@dimen/margin_medium"/>
-                </LinearLayout>
-                <TextView
-                    android:id="@+id/tvJobDescTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Job Description"
-                    android:textStyle="bold"
-                    android:textSize="@dimen/text_regular_2x"
-                    android:layout_below="@id/tvDates"
-                    android:layout_marginTop="@dimen/margin_medium"
-                    android:layout_marginLeft="@dimen/margin_medium"/>
-                <TextView
-                    android:id="@+id/tvJobDesc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Teach English speaking with short time period for business purpose"
-                    android:layout_below="@id/tvJobDescTitle"
-                    android:layout_marginTop="@dimen/margin_medium"
-                    android:layout_marginLeft="@dimen/margin_medium"
-                    android:layout_marginRight="@dimen/margin_medium"/>
-                <TextView
-                    android:id="@+id/tvImportantNotesTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tvJobDesc"
-                    android:layout_marginTop="@dimen/margin_medium"
-                    android:text="** Important Notes **"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="@dimen/margin_medium"/>
-                <TextView
-                    android:id="@+id/tvImportantNotes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="-We want you to come early in the morning"
-                    android:layout_marginLeft="@dimen/margin_medium"
-                    android:layout_below="@id/tvImportantNotesTitle"
-                    android:layout_marginTop="@dimen/margin_medium" />
-                <TextView
-                    android:id="@+id/tvDates"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Start from 2018-10-27 until 2018-11-28"
-                    android:layout_below="@id/llDetailsInfo"
-                    android:layout_marginTop="@dimen/margin_medium"
-                    android:layout_marginLeft="@dimen/margin_medium"/>
-            </RelativeLayout>
-        </ScrollView>
-
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:text="APPLY THIS JOB"
-            android:gravity="center"
-            android:textColor="@color/white_full"
-            android:textStyle="bold"
-            android:padding="@dimen/margin_medium_2"
-            android:background="@color/accent"/>
-    </RelativeLayout>
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium">
+
+            <TextView
+                android:id="@+id/tvDetailsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:padding="@dimen/margin_small"
+                android:text="Job Title : To Teach English Speaking"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/tvDetailsLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDetailsTitle"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:padding="@dimen/margin_small"
+                android:text="Location : Hlaing"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/tvDetailsPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDetailsLocation"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:padding="@dimen/margin_small"
+                android:text="Payment : $30000"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/tvDetailsPostDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDetailsPayment"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:padding="@dimen/margin_small"
+                android:text="Posted Date : "
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/tvDetailsPostClosedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDetailsPostDate"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:padding="@dimen/margin_small"
+                android:text="Post Closed Date"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/tvDetailsPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDetailsPostClosedDate"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:padding="@dimen/margin_small"
+                android:text="Period : "
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/tvDetailsVacancy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDetailsPeriod"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:padding="@dimen/margin_small"
+                android:text="Vacancy : 3 posts Available"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/tvJobDescTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDetailsVacancy"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="Job Description"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvJobDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvJobDescTitle"
+                android:padding="@dimen/margin_small"
+                android:text="Teach English speaking with short time period for business purpose" />
+
+            <TextView
+                android:id="@+id/tvImportantNotesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDetailsContactPhno"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="** Important Notes **"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvImportantNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tvImportantNotesTitle"
+                android:layout_below="@+id/tvImportantNotesTitle"
+                android:padding="@dimen/margin_small"
+                android:text="-We want you to come early in the morning"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDetailsDates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvJobDesc"
+                android:padding="@dimen/margin_small" />
+
+            <TextView
+                android:id="@+id/tvContactsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDetailsDates"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="Contacts"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDetailsContactEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvContactsTitle"
+                android:padding="@dimen/margin_small"
+                android:text="Email - "
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/tvDetailsContactPhno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDetailsContactEmail"
+                android:padding="@dimen/margin_small"
+                android:text="Phone No - "
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/btnApplyJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvImportantNotes"
+                android:layout_margin="@dimen/margin_medium"
+                android:background="@drawable/dc_contained_textview"
+                android:gravity="center"
+                android:padding="@dimen/margin_medium_2"
+                android:text="APPLY JOB"
+                android:textColor="@color/white_full"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
 </android.support.design.widget.CoordinatorLayout>
